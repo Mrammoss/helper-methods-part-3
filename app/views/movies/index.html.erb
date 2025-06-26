@@ -1,3 +1,4 @@
+
 <h1>
   List of all movies
 </h1>
@@ -13,7 +14,7 @@
 <div class="row">
   <% @movies.each do |movie| %>
     <div class="col-md-3">
-      <%= render partial: "movies/movie_card", locals: { movie: movie } %>
+      <%= render movie %>
     </div>
   <% end %>
 </div>
